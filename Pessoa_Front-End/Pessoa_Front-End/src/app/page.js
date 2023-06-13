@@ -15,6 +15,7 @@ export default async function Home() {
         <div key={pessoas.id}>
           <p>{pessoas.nome}</p>
           <p>{pessoas.idade}</p>
+          <img src={pessoas.}
           <Link href={`/pessoa/${pessoas.id}`}>ver mais</Link>
         </div>
       ))}
