@@ -5,23 +5,27 @@ import { useRouter } from 'next/navigation'
 
 export default function Cadastro() {
     const route = useRouter();
-    const [nome, setNome] = useState();
-    const [idade, setIdade] = useState();
-    const [uf, setUF] = useState();
+    const [titulo, setTitulo] = useState();
+    const [dataCad, setDataCad] = useState();
+    const [preco, setPreco] = useState();
+    const [descricao, setDescricao] = useState();
+    const [imagem, setImagem] = useState();
 
     const cadastrar = (e) => {
         e.preventDefault()
         
-        const pessoa = {
-            nome: nome,
-            idade: idade,
-            uf: uf
+        const produto = {
+            titulo: titulo,
+            dataCad: dataCad,
+            preco: preco,
+            descricao: descricao,
+            imagem: imagem
         }
-        const pessoaJson = JSON.stringify(pessoa);
-        fetch("http://localhost:3003/pessoa", {
+        const produtoJson = JSON.stringify(produto);
+        fetch("http://localhost:3003/produto", {
             method: "POST",
             headers: { "content-Type": "application/json" },
-            body: pessoaJson
+            body: produtoJson
         }).then(function(){ route.push("/")}).catch(()=> console.log("Não foi possível cadastrar!"))
     }
 
@@ -30,15 +34,15 @@ export default function Cadastro() {
             <form  onSubmit={cadastrar}>
                 <input
                     type="text"
-                    placeholder='Nome:'
-                    nome="nome"
-                    onChange={e => setNome(e.target.value)}
+                    placeholder='Titulo:'
+                    name="titulo"
+                    onChange={e => setTitulo(e.target.value)}
                 /><br/>
                 <input
-                    type="text"
-                    placeholder='Idade:'
-                    nome="idade"
-                    onChange={e => setIdade(e.target.value)}
+                    type="date"
+                    placeholder='Data de cadastro:'
+                    name="dataCad"
+                    onChange={e => setDataCad(e.target.value)}
                 /><br/>
                 <input
                     type="text"
