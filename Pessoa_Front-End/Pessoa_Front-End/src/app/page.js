@@ -3,18 +3,21 @@ import Link from 'next/link';
 
 export default async function Home() {
 
-  const req = await fetch("http://localhost:3003/pessoas", {
+  const req = await fetch("http://localhost:3003/produtos", {
     cache: "no-cache"
   });
-  const pessoas = await req.json();
+  const produtos = await req.json();
 
   return (
     <main> <Link href="/cadastro" className='voltar'> CADASTRAR </Link>
 
-      {pessoas.map(pessoas => (
-        <div key={pessoas.id}>
-          <p>{pessoas.nome}</p>
-          <p>{pessoas.idade}</p>
+      {produtos.map(produtos => (
+        <div key={produtos.codigo}>
+          <p>{produtos.titulo}</p>
+          <p>{produtos.dataCad}</p>
+          <p>{produtos.preco}</p>
+          <p>{produtos.descricao}</p>
+          <img src={pessoas.imagem}/>
         
           <Link href={`/pessoa/${pessoas.id}`}>ver mais</Link>
         </div>
