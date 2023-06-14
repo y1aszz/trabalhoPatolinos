@@ -1,6 +1,6 @@
 const db = require("../db");
 
-class Produtos {
+class Produto {
   static async select() {
     try {
       const connect = await db.connect();
@@ -58,4 +58,4 @@ class Produtos {
   }
 }
 
-module.exports = Produtos;
+module.exports = Produto;
