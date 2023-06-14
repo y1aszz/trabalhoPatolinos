@@ -11,11 +11,11 @@ class Produto {
       throw error;
     }
   }
-  static async selectOne(id) {
+  static async selectOne(codigo) {
     try {
       const connect = await db.connect();
-      const sql = "SELECT * FROM produtos WHERE id=$1";
-      return await connect.query(sql,[id]);
+      const sql = "SELECT * FROM produtos WHERE codigo=$1";
+      return await connect.query(sql,[codigo]);
     } catch (error) {
       console.error('Erro em select:', error);
       throw error;
@@ -50,7 +50,7 @@ class Produto {
     try {
       const connect = await db.connect();
       const sql = "DELETE FROM produtos WHERE codigo=$1";
-      return await connect.query(sql, [id]);
+      return await connect.query(sql, [codigo]);
     } catch (error) {
       console.error('Erro em delete:', error);
       throw error;

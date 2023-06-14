@@ -23,7 +23,7 @@ app.get('/produtos', async function(req, res){
 
 app.post('/produtos', async function(req, res){
   try {
-    var produto = await Produto.selectOne(req.body.id);
+    var produto = await Produto.selectOne(req.body.codigo);
     res.json(produto.rows[0]);
   } catch (error) {
     console.error('Erro ao buscar produtos:', error);
@@ -43,8 +43,8 @@ app.post('/produto', async function(req,res){
 
 app.delete('/produtos', async function(req, res){
   try {
-    console.log(req.body.id)
-    var produto = await Produto.delete(req.body.id);
+    console.log(req.body.codigo)
+    var produto = await Produto.delete(req.body.codigo);
     res.json(produto.rows);
   } catch (error) {
     console.error('Erro ao atualizar produto:', error);

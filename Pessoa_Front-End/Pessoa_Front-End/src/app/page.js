@@ -19,7 +19,7 @@ export default async function Home() {
           <p>{produtos.descricao}</p>
           <img src={produtos.imagem}/>
         
-          <Link href={`/produto/${produtos.id}`}>ver mais</Link>
+          <Link href={`/produto/${produtos.codigo}`}>ver mais</Link>
         </div>
       ))}
     </main>
