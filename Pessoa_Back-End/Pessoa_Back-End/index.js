@@ -34,7 +34,7 @@ app.post('/produtos', async function(req, res){
 app.post('/produto', async function(req,res){
   try{
     var produto = req.body
-    var produto = await Produto.insert(pessoa);
+    var produto = await Produto.insert(produto);
     res.json(produto.rows)
   }catch(error){
     console.log("error")

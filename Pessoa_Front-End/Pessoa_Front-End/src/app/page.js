@@ -17,9 +17,9 @@ export default async function Home() {
           <p>{produtos.dataCad}</p>
           <p>{produtos.preco}</p>
           <p>{produtos.descricao}</p>
-          <img src={pessoas.imagem}/>
+          <img src={produtos.imagem}/>
         
-          <Link href={`/pessoa/${pessoas.id}`}>ver mais</Link>
+          <Link href={`/produto/${produtos.id}`}>ver mais</Link>
         </div>
       ))}
     </main>
