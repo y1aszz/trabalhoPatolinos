@@ -9,7 +9,8 @@ export default async function Home() {
   const produtos = await req.json();
 
   return (
-    <main> <Link href="/cadastro" className='voltar'> CADASTRAR </Link>
+   
+    <main> <Link href="/cadastro" className='voltar' > CADASTRAR </Link>
 
       {produtos.map(produtos => (
         <div key={produtos.codigo}>
