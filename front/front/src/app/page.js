@@ -17,7 +17,7 @@ export default async function Home() {
           <p>{produtos.dataCad}</p>
           <p>{produtos.preco}</p>
           <p>{produtos.descricao}</p>
-          <img src={produtos.imagem}/>
+          <img style={{width: 150}} src={produtos.imagem}/>
         
           <Link href={`/produto/${produtos.codigo}`}>ver mais</Link>
         </div>
