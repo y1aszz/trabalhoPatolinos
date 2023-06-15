@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,17 +13,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body>
-        <header 
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          backgroundColor: 'blue',
-         
-        }}
-        >
-          <ul>
-          <li>Cadastrar</li>
-          </ul>
+        <header className="shadow-2xl background-color-blue">
+         <Link href="/cadastro" className='voltar' > CADASTRAR </Link>
         </header>
         {children}</body>
     </html>
