@@ -53,6 +53,6 @@ app.delete('/produtos', async function(req, res){
 });
 
 
-app.listen(3003, function() {
-  console.log(`app de Exemplo escutando na porta! ${3003}`)
+app.listen(3004, function() {
+  console.log(`app de Exemplo escutando na porta! ${3004}`)
 });

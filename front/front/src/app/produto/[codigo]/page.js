@@ -8,7 +8,7 @@ export default async function Produto({ params }) {
 
     const codigoJson = JSON.stringify(codigo);
 
-    const req = await fetch("http://localhost:3003/produtos", {
+    const req = await fetch("http://localhost:3004/produtos", {
         method: "POST",
         cache: "no-cache",
         headers: { 'content-type': 'application/json' },
@@ -20,7 +20,7 @@ export default async function Produto({ params }) {
     const remover = () => {
         console.log(codigoJson)
         try {
-            fetch("http://localhost:3003/produtos", {
+            fetch("http://localhost:3004/produtos", {
                 method: "DELETE",
                 headers: { 'content-type': 'application/json' },
                 body: codigoJson
