@@ -21,10 +21,10 @@ export default async function Home() {
           <ul className={styles.ulPage}>
 
           <li><p style={{fontWeight: 'bold', fontSize: 16, marginTop:10}}>{produtos.titulo}</p></li>
-          <li><img style={{width: 145}} src={produtos.imagem}/></li>
+          <li><Link href={`/produto/${produtos.codigo}`}><img style={{width: 145}} src={produtos.imagem}/></Link></li>
           <li>{produtos.dataCad}</li>
           <li>R${produtos.preco}</li>
-          <li><Link href={`/produto/${produtos.codigo}`}>ver mais</Link></li>
+          <li><Link href={`/produto/${produtos.codigo}`}>VER MAIS</Link></li>
           
           </ul>
         
