@@ -19,10 +19,10 @@ export default function RootLayout({ children }) {
           <li><Link href="/cadastro" className='voltar' > CADASTRAR </Link></li>
          <li className='voltando'><a href='/'>VOLTAR</a></li>
          </ul>
-         <a href=''><img className='carrinho' src='https://cdn.icon-icons.com/icons2/1830/PNG/512/cart2-115853_115816.png'></img></a>
-      
+         <img className='carrinho' src='https://cdn.icon-icons.com/icons2/1830/PNG/512/cart2-115853_115816.png'></img>
         </header>
-        {children}</body>
+       {children}
+        </body>
     </html>
   )
 }

@@ -1,5 +1,7 @@
 "use client"
 import Link from 'next/link';
+import '../app/page.module.css'
+
 
 export default async function Home() {
 
@@ -13,7 +15,7 @@ export default async function Home() {
     <main> 
 
       {produtos.map(produtos => (
-        <div key={produtos.codigo}>
+        <div className='fila' key={produtos.codigo}>
           <p style={{fontWeight: 'bold', fontSize: 23}}>{produtos.titulo}</p>
           <img style={{width: 145}} src={produtos.imagem}/>
           <p>{produtos.dataCad}</p>
