@@ -1,6 +1,7 @@
 'use client'
 
 
+
 import { useRouter } from "next/navigation";
 
 export default async function Produto({ params }) {
@@ -33,13 +34,16 @@ export default async function Produto({ params }) {
     }
     return (
         <div>
-        <p>{produto.titulo}</p>
-        <img src={produto.imagem}/>
+        <p style={{fontWeight: 'bold', fontSize: 20, marginTop:10}}>{produto.titulo}</p>
+        <img style={{width: 170}} src={produto.imagem}/>
           <p>{produto.dataCad}</p>
-          <p>{produto.preco}</p>
+          <p>R${produto.preco}</p>
           <p>{produto.descricao}</p>
           
-            <button onClick={e => e.preventDefault(remover())}>REMOVER</button>
+            <button style={{
+                
+            }} 
+            onClick={e => e.preventDefault(remover())}>REMOVER</button>
 
         </div>
 

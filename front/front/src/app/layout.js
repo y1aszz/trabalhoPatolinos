@@ -24,38 +24,30 @@ export default function RootLayout({ children }) {
        {children}
 
        <footer>
-       <div className='waves'>
-      <div className='wave' id="wave1"></div>
-      <div className='wave' id="wave2"></div>
-      <div className='wave' id="wave3"></div>
-      <div className='wave' id="wave4"></div>
-    </div>
 
     <ul className='socialIco'>
       <li className='nome'>Jamili Amaral</li>
 
-      <li className='social-icon__item'><a className='social-icon__link' href="#">
+      <li className='social-icon__item'><a className='social-icon__link' href="https://github.com/jenzinha">
           <img className='imagemLogo' src='https://img.icons8.com/?size=1x&id=12598&format=png' name="logo-git"></img></a></li>
 
-      <li className="social-icon__item"><a className="social-icon__link" href="#">
+      <li className="social-icon__item"><a className="social-icon__link" href="https://www.linkedin.com/in/jamili-souza-amaral-08587b262/">
           <img className='imagemLogo' src='https://img.icons8.com/?size=1x&id=60443&format=png' name="logo-linkedin"></img></a></li>
       
-      <li className="social-icon__item"><a className="social-icon__link" href="#">
-          <img className='imagemLogo' src='https://img.icons8.com/?size=1x&id=124377&format=png' name="logo-email"></img></a></li>
+   
     
     </ul>
 
     <ul className='socialIco2'>
       <li className='nome'>Yasmim Sordi</li>
 
-      <li className='social-icon__item'><a className='social-icon__link' href="#">
+      <li className='social-icon__item'><a className='social-icon__link' href="">
           <img className='imagemLogo' src='https://img.icons8.com/?size=1x&id=12598&format=png' name="logo-git"></img></a></li>
 
-      <li className="social-icon__item"><a className="social-icon__link" href="#">
+      <li className="social-icon__item"><a className="social-icon__link" href="https://www.linkedin.com/in/yasmim-favoretto-7a367b266/">
           <img className='imagemLogo' src='https://img.icons8.com/?size=1x&id=60443&format=png' name="logo-linkedin"></img></a></li>
       
-      <li className="social-icon__item"><a className="social-icon__link" href="#">
-          <img className='imagemLogo' src='https://img.icons8.com/?size=1x&id=124377&format=png' name="logo-email"></img></a></li>
+      
     
     </ul>
 

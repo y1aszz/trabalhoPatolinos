@@ -23,7 +23,7 @@ export default async function Home() {
           <li><p style={{fontWeight: 'bold', fontSize: 16, marginTop:10}}>{produtos.titulo}</p></li>
           <li><img style={{width: 145}} src={produtos.imagem}/></li>
           <li>{produtos.dataCad}</li>
-          <li>{produtos.preco}</li>
+          <li>R${produtos.preco}</li>
           <li><Link href={`/produto/${produtos.codigo}`}>ver mais</Link></li>
           
           </ul>
