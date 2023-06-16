@@ -13,8 +13,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body>
-        <header className="shadow-2xl background-color-blue">
-         <Link href="/cadastro" className='voltar' > CADASTRAR </Link>
+        <header className='header'>
+          <img className='logo' src='https://img.freepik.com/vetores-premium/gato-bonito-lendo-um-livro-conceito-de-desenho-animado-animal-isolado_556653-3388.jpg?w=360'></img>
+          <ul>
+         <li><Link href="/cadastro" className='voltar' > CADASTRAR </Link></li>
+         <li><a href='/'>VOLTAR</a></li>
+         </ul>
         </header>
         {children}</body>
     </html>

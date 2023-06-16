@@ -63,9 +63,7 @@ export default function Cadastro() {
                     onChange={e => setImagem(e.target.value)}
                 /><br/>
                 <button type='submit'>Cadastrar</button>
-                <div>
-                    <a href='/'>Voltar</a>
-                </div>
+                
             </form>
         </div>
     );
