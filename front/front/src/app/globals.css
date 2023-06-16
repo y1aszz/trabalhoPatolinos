@@ -34,7 +34,10 @@ body{
     margin-right: 30px;
     color: blueviolet;
     list-style-type: none;
-   
+}
+
+.li:hover{
+    padding-left: 8px;
 }
 
 
@@ -67,7 +70,9 @@ a:active{
     list-style-type: none;
 }
 
-
+.voltando:hover{
+    padding-left: 8px;
+}
 
 li{
  list-style-type: none;
