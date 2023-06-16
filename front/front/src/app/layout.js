@@ -22,6 +22,46 @@ export default function RootLayout({ children }) {
          <img className='carrinho' src='https://cdn.icon-icons.com/icons2/1830/PNG/512/cart2-115853_115816.png'></img>
         </header>
        {children}
+
+       <footer>
+       <div className='waves'>
+      <div className='wave' id="wave1"></div>
+      <div className='wave' id="wave2"></div>
+      <div className='wave' id="wave3"></div>
+      <div className='wave' id="wave4"></div>
+    </div>
+
+    <ul className='socialIco'>
+      <li className='nome'>Jamili Amaral</li>
+
+      <li className='social-icon__item'><a className='social-icon__link' href="#">
+          <img className='imagemLogo' src='https://img.icons8.com/?size=1x&id=12598&format=png' name="logo-git"></img></a></li>
+
+      <li className="social-icon__item"><a className="social-icon__link" href="#">
+          <img className='imagemLogo' src='https://img.icons8.com/?size=1x&id=60443&format=png' name="logo-linkedin"></img></a></li>
+      
+      <li className="social-icon__item"><a className="social-icon__link" href="#">
+          <img className='imagemLogo' src='https://img.icons8.com/?size=1x&id=124377&format=png' name="logo-email"></img></a></li>
+    
+    </ul>
+
+    <ul className='socialIco2'>
+      <li className='nome'>Yasmim Sordi</li>
+
+      <li className='social-icon__item'><a className='social-icon__link' href="#">
+          <img className='imagemLogo' src='https://img.icons8.com/?size=1x&id=12598&format=png' name="logo-git"></img></a></li>
+
+      <li className="social-icon__item"><a className="social-icon__link" href="#">
+          <img className='imagemLogo' src='https://img.icons8.com/?size=1x&id=60443&format=png' name="logo-linkedin"></img></a></li>
+      
+      <li className="social-icon__item"><a className="social-icon__link" href="#">
+          <img className='imagemLogo' src='https://img.icons8.com/?size=1x&id=124377&format=png' name="logo-email"></img></a></li>
+    
+    </ul>
+
+
+    <p>&copy;2023 Yasmim Sordi e Jamili Amaral | All Rights Reserved</p>
+       </footer>
         </body>
     </html>
   )
