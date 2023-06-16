@@ -22,13 +22,13 @@ body{
     cursor: pointer;
 }
 
-ul{
+.ul{
     
     display: flex;
     margin: 8px;
 }
 
-li{
+.li{
     justify-content: right ;
     margin-top: 20px;
     margin-right: 30px;
@@ -60,4 +60,15 @@ a:active{
 
 .carrinho:hover{
     cursor: pointer;
+}
+
+.voltando{
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+
+
+li{
+ list-style-type: none;
 }

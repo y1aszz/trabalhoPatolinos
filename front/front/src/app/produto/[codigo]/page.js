@@ -1,5 +1,5 @@
 'use client'
-import './globals.css'
+
 
 import { useRouter } from "next/navigation";
 
@@ -34,10 +34,11 @@ export default async function Produto({ params }) {
     return (
         <div>
         <p>{produto.titulo}</p>
+        <img src={produto.imagem}/>
           <p>{produto.dataCad}</p>
           <p>{produto.preco}</p>
           <p>{produto.descricao}</p>
-          <img src={produto.imagem}/>
+          
             <button onClick={e => e.preventDefault(remover())}>REMOVER</button>
 
         </div>

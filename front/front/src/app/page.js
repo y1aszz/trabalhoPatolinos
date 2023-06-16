@@ -1,6 +1,7 @@
 "use client"
 import Link from 'next/link';
-import '../app/page.module.css'
+import styles from './page.module.css'
+
 
 
 export default async function Home() {
@@ -12,18 +13,17 @@ export default async function Home() {
 
   return (
    
-    <main> 
+    <main className={styles.moin}> 
 
       {produtos.map(produtos => (
-        <div className='fila' key={produtos.codigo}>
-          <p style={{fontWeight: 'bold', fontSize: 23}}>{produtos.titulo}</p>
-          <img style={{width: 145}} src={produtos.imagem}/>
-          <p>{produtos.dataCad}</p>
-          <p>{produtos.preco}</p>
-          <p>{produtos.descricao}</p>
-          
-        
-          <Link href={`/produto/${produtos.codigo}`}>ver mais</Link>
+        <div className={styles.separa} key={produtos.codigo}>
+          <ul className={styles.ulPage}>
+          <li><p style={{fontWeight: 'bold', fontSize: 23}}>{produtos.titulo}</p></li>
+          <li><img style={{width: 145}} src={produtos.imagem}/></li>
+          <li>{produtos.dataCad}</li>
+          <li>{produtos.preco}</li>
+          <li><Link href={`/produto/${produtos.codigo}`}>ver mais</Link></li>
+          </ul>
         </div>
       ))}
     </main>
