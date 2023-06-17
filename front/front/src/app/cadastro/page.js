@@ -40,7 +40,7 @@ export default function Cadastro() {
                 <div className='input-group'>
                     
          
-                <img className='imagemcadas' src='https://hqscomcafe.com.br/wp-content/uploads/2020/11/undraw_book_lover_mkck.png'></img>
+                <img className='imagemcadas' src='https://storage.googleapis.com/kotakode-prod-public/images/b774070f-c8b9-4896-bebc-7d7e51ccbac1-undraw_reading_time_gvg0-1.png'></img>
              
 
                 <div className='cadastrr'>
