@@ -148,6 +148,7 @@ button:active{
 }
 
 .input-group{
+ 
  background-color: #3A136C;
  padding:7%;
  width: 10%;
@@ -156,3 +157,6 @@ button:active{
     color: white;
 }
 
+.imagemcadas{
+    width: 170px;
+}

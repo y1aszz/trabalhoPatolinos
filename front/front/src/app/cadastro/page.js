@@ -31,9 +31,7 @@ export default function Cadastro() {
 
     return (
         <div className='container'>
-            <div className='form-image'>
-                <img src='https://hqscomcafe.com.br/wp-content/uploads/2020/11/undraw_book_lover_mkck.png'></img>
-            </div>
+            
             <div className='form'>
             <form  onSubmit={cadastrar}>
                 
@@ -41,6 +39,10 @@ export default function Cadastro() {
             
                 <div className='input-group'>
                     
+         
+                <img className='imagemcadas' src='https://hqscomcafe.com.br/wp-content/uploads/2020/11/undraw_book_lover_mkck.png'></img>
+             
+
                 <div className='cadastrr'>
                 <div className='title'>CADASTRO DE LIVROS</div>
                 </div>

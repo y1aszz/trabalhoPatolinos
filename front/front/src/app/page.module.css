@@ -9,3 +9,6 @@
   border-radius: 10px;
 }
 
+.separa:hover{
+  box-shadow: 0 0 1rem rgb(208, 171, 241);
+}
