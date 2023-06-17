@@ -37,8 +37,8 @@ export default async function Produto({ params }) {
         <h3>{produto.titulo}</h3>
         <img className="imagemCodigo" src={produto.imagem}/>
           <p>{produto.dataCad}</p>
-          <p>R${produto.preco}</p>
-          <p>{produto.descricao}</p>
+          <p  className="precoPro">R${produto.preco}</p>
+          <p className="descriPro">{produto.descricao}</p>
           
             <button style={{
                 

@@ -189,7 +189,7 @@ h3 {
     color: #474544;
     font-size: 32px;
     font-weight: 700;
-    letter-spacing: 7px;
+    letter-spacing: 3px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -320,4 +320,21 @@ input[type='text'], [type='date']{
     fill: #474544;
     margin: 0 auto;
     width: 20%;
+}
+
+.precoPro{
+    color: #252424b0;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.descriPro{
+    color: #252424b0;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
 }
