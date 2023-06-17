@@ -31,61 +31,50 @@ export default function Cadastro() {
 
     return (
         <div className='container'>
+            <h3 className='conta'>CADASTRO DE LIVROS</h3>
             
-            <div className='form'>
-            <form  onSubmit={cadastrar}>
+            <img className='imagemcadas' src='https://storage.googleapis.com/kotakode-prod-public/images/b774070f-c8b9-4896-bebc-7d7e51ccbac1-undraw_reading_time_gvg0-1.png'></img>
+           
+            <form className='contact_form' onSubmit={cadastrar}>
                 
-              
-            
-                <div className='input-group'>
-                    
-         
-                <img className='imagemcadas' src='https://storage.googleapis.com/kotakode-prod-public/images/b774070f-c8b9-4896-bebc-7d7e51ccbac1-undraw_reading_time_gvg0-1.png'></img>
-             
-
-                <div className='cadastrr'>
-                <div className='title'>CADASTRO DE LIVROS</div>
-                </div>
-                    <br/>
-                <div className='input-box'> 
-                <label for='titulo'>Titulo</label>
-                <input id='titulo' type="text" name="titulo"
+                <div className='titulo'> 
+                <input id='texto' placeholder='Titulo' type="text" name="titulo"
                 onChange={e => setTitulo(e.target.value)}/>  
                 </div>
 
-                <div className='input-box'>
-                <label for='data'>Data de cadastro</label>
-                <input id='data' type="date" name="dataCad"
+                <div className='data'>
+                <input id='texto' placeholder='Data de cadastro' type="date" name="dataCad"
                 onChange={e => setDataCad(e.target.value)}/>
                 </div>
 
-                <div className='input-box'>
-                <label for='preco'>Preço</label>
-                <input id='preco' type="text" name="preco"
+                <div className='preco'>
+                <input id='texto' placeholder='Preço' type="text" name="preco"
                 onChange={e => setPreco(e.target.value)}/> 
                 </div>
 
-                <div className='input-box'>
-                <label for='descricao'>Descrição</label>
-                <input type="text" name="descricao"
+                <div className='descricao'>
+                <input id='texto' placeholder='Descrição' type="text" name="descricao"
                 onChange={e => setDescricao(e.target.value)}/>
                 </div>
 
-                <div className='input-box'>
-                <label for='imagemform'>Imagem</label>
-                <input type="text" name="imagem"
+                <div className='urlImage'>
+                <input id='texto' placeholder='Digite a URL da imagem' type="text" name="imagem"
                 onChange={e => setImagem(e.target.value)}/>
                 </div>
 
-                <div className='continue-button'> 
-                <button type='submit'>Cadastrar</button>
+                <div className='submit'> 
+                <button id="form_button" type='submit'>Cadastrar</button>
                 </div>
                 
-                </div>
+               
 
                
             </form>
             </div>
-        </div>
+
+  
+
+
+
     );
 }

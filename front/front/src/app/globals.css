@@ -137,10 +137,12 @@ button{
     border-radius: 10px;
     border-color: #3A136C;
     color: white;
+    overflow: visible;
 }
 
 button:hover{
     cursor: pointer;
+    box-shadow: 0 0 1rem blueviolet;
 }
 
 button:active{
@@ -148,15 +150,156 @@ button:active{
 }
 
 .input-group{
- 
  background-color: #3A136C;
- padding:7%;
- width: 10%;
+ width: 17%;
+ border-radius: 10px;
 }
 .cadastrr{
     color: white;
+
 }
 
+#texto{
+    background-color: transparent;
+    border-radius: 3px;
+}
+
+placeholder{
+    color: white;
+}
+
+input{
+    color: #fff;
+    line-height: normal;
+}
+
+.container{
+ border: solid 3px #474544;
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+
+form {
+    padding: 37.5px;
+    margin: 50px 0;
+}
+
+h3 {
+    color: #474544;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
 .imagemcadas{
-    width: 170px;
+    width: 300px;
+    margin: 50px auto 0;
+    display: block;
+    fill: #474544;
+    margin: 0 auto;
+}
+
+.data {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='date']{
+	background: none;
+  border: none;
+	border-bottom: solid 2px #474544;
+	color: #474544;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='date']:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+::-webkit-input-placeholder {
+	color: #474544;
+}
+
+:-moz-placeholder { 
+	color: #474544;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #474544;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #474544;
+}
+
+#form_button {
+    background: none;
+    border: solid 2px #474544;
+    color: #474544;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  
+  #form_button:hover {
+    background: #474544;
+    color: #F2F3EB;
+  }
+
+@media screen and (max-width: 480px) {
+h3 {
+    font-size: 26px;
+}
+    
+    
+#form_button {
+    padding: 15px 25px;
+}
+}
+
+@media screen and (max-width: 420px) {
+h3 {
+    font-size: 18px;
+}
+    
+
+    
+  
+    
+input[type='text'], [type='date']{
+    font-size: 0.875em;
+}
 }
