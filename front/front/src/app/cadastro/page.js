@@ -30,41 +30,60 @@ export default function Cadastro() {
     }
 
     return (
-        <div className={styles.main}>
+        <div className='container'>
+            <div className='form-image'>
+                <img src='https://hqscomcafe.com.br/wp-content/uploads/2020/11/undraw_book_lover_mkck.png'></img>
+            </div>
+            <div className='form'>
             <form  onSubmit={cadastrar}>
-                <input
-                    type="text"
-                    placeholder='Titulo:'
-                    name="titulo"
-                    onChange={e => setTitulo(e.target.value)}
-                /><br/>
-                <input
-                    type="date"
-                    placeholder='Data de cadastro:'
-                    name="dataCad"
-                    onChange={e => setDataCad(e.target.value)}
-                /><br/>
-                <input
-                    type="text"
-                    placeholder='Preço:'
-                    name="preco"
-                    onChange={e => setPreco(e.target.value)}
-                /><br/>
-                <input
-                    type="text"
-                    placeholder='Descrição:'
-                    name="descricao"
-                    onChange={e => setDescricao(e.target.value)}
-                /><br/>
-                <input
-                    type="text"
-                    placeholder='Imagem:'
-                    name="imagem"
-                    onChange={e => setImagem(e.target.value)}
-                /><br/>
-                <button type='submit'>Cadastrar</button>
                 
+              
+            
+                <div className='input-group'>
+                    
+                <div className='cadastrr'>
+                <div className='title'>CADASTRO DE LIVROS</div>
+                </div>
+                    <br/>
+                <div className='input-box'> 
+                <label for='titulo'>Titulo</label>
+                <input id='titulo' type="text" name="titulo"
+                onChange={e => setTitulo(e.target.value)}/>  
+                </div>
+
+                <div className='input-box'>
+                <label for='data'>Data de cadastro</label>
+                <input id='data' type="date" name="dataCad"
+                onChange={e => setDataCad(e.target.value)}/>
+                </div>
+
+                <div className='input-box'>
+                <label for='preco'>Preço</label>
+                <input id='preco' type="text" name="preco"
+                onChange={e => setPreco(e.target.value)}/> 
+                </div>
+
+                <div className='input-box'>
+                <label for='descricao'>Descrição</label>
+                <input type="text" name="descricao"
+                onChange={e => setDescricao(e.target.value)}/>
+                </div>
+
+                <div className='input-box'>
+                <label for='imagemform'>Imagem</label>
+                <input type="text" name="imagem"
+                onChange={e => setImagem(e.target.value)}/>
+                </div>
+
+                <div className='continue-button'> 
+                <button type='submit'>Cadastrar</button>
+                </div>
+                
+                </div>
+
+               
             </form>
+            </div>
         </div>
     );
 }

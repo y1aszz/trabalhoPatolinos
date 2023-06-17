@@ -36,9 +36,7 @@ body{
     list-style-type: none;
 }
 
-.li:hover{
-    padding-left: 8px;
-}
+
 
 
 a{
@@ -70,9 +68,7 @@ a:active{
     list-style-type: none;
 }
 
-.voltando:hover{
-    padding-left: 8px;
-}
+
 
 li{
  list-style-type: none;
@@ -149,5 +145,14 @@ button:hover{
 
 button:active{
     cursor: grabbing;
+}
+
+.input-group{
+ background-color: #3A136C;
+ padding:7%;
+ width: 10%;
+}
+.cadastrr{
+    color: white;
 }
 
