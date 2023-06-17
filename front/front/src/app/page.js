@@ -14,7 +14,7 @@ export default async function Home() {
   return (
    
     <main className={styles.moin}> 
-
+<div className='container2'>
       {produtos.map(produtos => (
         <div className={styles.separa} key={produtos.codigo}>
 
@@ -29,7 +29,10 @@ export default async function Home() {
           </ul>
         
         </div>
+
       ))}
+      
+      </div>
     </main>
   )
 }
