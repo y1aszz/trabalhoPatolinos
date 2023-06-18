@@ -324,7 +324,7 @@ input[type='text'], [type='date']{
     color: #4e0c7b;
     font-size: 20px;
     font-weight: 700;
-    letter-spacing: 7px;
+    letter-spacing: 3px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -366,7 +366,7 @@ input[type='text'], [type='date']{
     color: #4e0c7b;
     font-size: 20px;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-align: center;
     text-transform: uppercase;
 }

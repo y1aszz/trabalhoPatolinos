@@ -24,6 +24,7 @@ export default async function Home() {
            <li><Link href={`/produto/${produtos.codigo}`}><img style={{width: 145}} src={produtos.imagem}/></Link></li>
           
           <li style={{
+            marginRight:50,
                   color: '#4e0c7b',
                   fontSize: 14,
                   fontWeight: 700,
@@ -32,6 +33,7 @@ export default async function Home() {
           }}>{produtos.cadastro}</li>
 
           <li style={{
+            marginRight: 50,
              color: '#4e0c7b',
              fontSize: 14,
              fontWeight: 700,
@@ -44,7 +46,7 @@ export default async function Home() {
            fontSize: 14,
            fontWeight: 700,
            textAlign: 'center',
-           marginLeft:77,
+           marginLeft:50,
            textTransform: 'uppercase',
          }}
         href={`/produto/${produtos.codigo}`}>VER MAIS</Link></li>
