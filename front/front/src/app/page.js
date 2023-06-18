@@ -24,7 +24,7 @@ export default async function Home() {
           <li><Link href={`/produto/${produtos.codigo}`}><img style={{width: 145}} src={produtos.imagem}/></Link></li>
           <li>{produtos.dataCad}</li>
           <li>R${produtos.preco}</li>
-          <li><Link href={`/produto/${produtos.codigo}`}>VER MAIS</Link></li>
+          <li><Link className='verMais' href={`/produto/${produtos.codigo}`}>VER MAIS</Link></li>
           
           </ul>
         

@@ -40,10 +40,7 @@ export default async function Produto({ params }) {
           <p  className="precoPro">R${produto.preco}</p>
           <p className="descriPro">{produto.descricao}</p>
           
-            <button style={{
-                
-            }} 
-            onClick={e => e.preventDefault(remover())}>REMOVER</button>
+            <button id="removePage" onClick={e => e.preventDefault(remover())}>REMOVER</button>
 
         </div>
 
