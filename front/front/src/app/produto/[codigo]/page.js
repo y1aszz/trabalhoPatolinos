@@ -36,7 +36,7 @@ export default async function Produto({ params }) {
         <div className="container3">
         <h3>{produto.titulo}</h3>
         <img className="imagemCodigo" src={produto.imagem}/>
-          <p className="data"> {produto.dataCad}</p>
+          <p className="data"> {produto.cadastro}</p>
           <p  className="precoPro">R${produto.preco}</p>
           <p className="descriPro">{produto.descricao}</p>
           

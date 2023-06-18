@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation'
 export default function Cadastro() {
     const route = useRouter();
     const [titulo, setTitulo] = useState();
-    const [dataCad, setDataCad] = useState();
+    const [cadastro, setCadastro] = useState();
     const [preco, setPreco] = useState();
     const [descricao, setDescricao] = useState();
     const [imagem, setImagem] = useState();
@@ -16,7 +16,7 @@ export default function Cadastro() {
         
         const produto = {
             titulo: titulo,
-            dataCad: dataCad,
+            cadastro: cadastro,
             preco: preco,
             descricao: descricao,
             imagem: imagem
@@ -43,8 +43,8 @@ export default function Cadastro() {
                 </div>
 
                 <div className='data'>
-                <input id='texto' placeholder='Data de cadastro' type="text" name="dataCad"
-                onChange={e => setDataCad(e.target.value)}/>
+                <input placeholder='Data de cadastro' type="date" name="cadastro"
+                onChange={e => setCadastro(e.target.value)}/>
                 </div>
 
                 <div className='preco'>
