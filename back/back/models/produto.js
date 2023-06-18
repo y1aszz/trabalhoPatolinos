@@ -4,7 +4,7 @@ class Produto {
   static async select() {
     try {
       const connect = await db.connect();
-      const sql = "SELECT *FROM produtos"
+      const sql = "SELECT * FROM produtos"
       return await connect.query(sql);
     } catch (error) {
       console.error('Erro em select:', error);
@@ -25,8 +25,8 @@ class Produto {
   static async insert(data) {
     try {
       const connect = await db.connect();
-      const sql = "INSERT INTO produtos(titulo, dataCad, preco, descricao, imagem) VALUES ($1, $2, $3, $4, $5) RETURNING codigo, titulo, dataCad, preco, descricao, imagem;";
-      const values = [data.titulo, data.dataCad, data.preco, data.descricao, data.imagem];
+      const sql = "INSERT INTO produtos(codigo, titulo, dataCad, preco, descricao, imagem) VALUES ($1, $2, $3, $4, $5, $6) RETURNING codigo, titulo, dataCad, preco, descricao, imagem;";
+      const values = [data.codigo, data.titulo, data.dataCad, data.preco, data.descricao, data.imagem];
       return await connect.query(sql, values);
     } catch (error) {
       console.error('Erro em insert:', error);

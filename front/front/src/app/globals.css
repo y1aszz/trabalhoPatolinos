@@ -306,14 +306,12 @@ input[type='text'], [type='date']{
     margin: 60px auto;
     position: relative;
 }
-
 .container3{
     border: solid 3px #474544;
     max-width: 1300px;
     margin: 60px auto;
     position: relative;
 }
-
 .imagemCodigo{
     margin: 50px auto 0;
     display: block;

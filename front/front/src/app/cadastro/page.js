@@ -43,7 +43,7 @@ export default function Cadastro() {
                 </div>
 
                 <div className='data'>
-                <input id='texto' placeholder='Data de cadastro' type="date" name="dataCad"
+                <input id='texto' placeholder='Data de cadastro' type="text" name="dataCad"
                 onChange={e => setDataCad(e.target.value)}/>
                 </div>
 

@@ -17,18 +17,18 @@ export default async function Home() {
 <div className='container2'>
       {produtos.map(produtos => (
         <div className={styles.separa} key={produtos.codigo}>
-
+      
           <ul className={styles.ulPage}>
-
+         
           <li><p style={{fontWeight: 'bold', fontSize: 16, marginTop:10}}>{produtos.titulo}</p></li>
-          <li><Link href={`/produto/${produtos.codigo}`}><img style={{width: 145}} src={produtos.imagem}/></Link></li>
+           <li><Link href={`/produto/${produtos.codigo}`}><img style={{width: 145}} src={produtos.imagem}/></Link></li>
           <li>{produtos.dataCad}</li>
           <li>R${produtos.preco}</li>
-          <li><Link className='verMais' href={`/produto/${produtos.codigo}`}>VER MAIS</Link></li>
-          
+         <li><Link className='verMais' href={`/produto/${produtos.codigo}`}>VER MAIS</Link></li>
+         
           </ul>
-        
         </div>
+        
 
       ))}
       
