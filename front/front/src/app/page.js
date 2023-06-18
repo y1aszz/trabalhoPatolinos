@@ -20,11 +20,11 @@ export default async function Home() {
       
           <ul className={styles.ulPage}>
          
-          <li><p style={{fontWeight: 'bold', fontSize: 16, marginTop:10}}>{produtos.titulo}</p></li>
+          <li><p style={{color:'#4e0c7b', fontWeight: 'bold', fontSize: 17, marginTop:10}}>{produtos.titulo}</p></li>
            <li><Link href={`/produto/${produtos.codigo}`}><img style={{width: 145}} src={produtos.imagem}/></Link></li>
           
           <li style={{
-                  color: '#252424b0',
+                  color: '#4e0c7b',
                   fontSize: 14,
                   fontWeight: 700,
                   textAlign: 'center',
@@ -32,7 +32,7 @@ export default async function Home() {
           }}>{produtos.cadastro}</li>
 
           <li style={{
-             color: '#252424b0',
+             color: '#4e0c7b',
              fontSize: 14,
              fontWeight: 700,
              textAlign: 'center',
@@ -40,7 +40,7 @@ export default async function Home() {
           }}>R${produtos.preco}</li>
 
          <li><Link style={{
-           color: 'blueviolet',
+           color: '#252424b0',
            fontSize: 14,
            fontWeight: 700,
            textAlign: 'center',

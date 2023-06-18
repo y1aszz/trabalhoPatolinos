@@ -338,6 +338,7 @@ input[type='text'], [type='date']{
 }
 
 #removePage{
+    margin-left: 45%;
     background: none;
     border: solid 2px #4e0c7b;
     color: #4e0c7b;
