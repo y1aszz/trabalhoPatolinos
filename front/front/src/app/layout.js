@@ -14,12 +14,12 @@ export default function RootLayout({ children }) {
     <html lang="pt-br">
       <body>
         <header className='header'>
-          <img className='logo' src='https://img.freepik.com/vetores-premium/gato-bonito-lendo-um-livro-conceito-de-desenho-animado-animal-isolado_556653-3388.jpg?w=360'></img>
+          <img className='logo' src='https://s-media-cache-ak0.pinimg.com/originals/9d/c8/8e/9dc88efa480820bb6b1a265367627c77.jpg'></img>
           <ul className='ul'> 
           <li className='li'><Link href="/cadastro" className='voltar' > CADASTRAR </Link></li>
          <li className='voltando'><a href='/'>VOLTAR</a></li>
          </ul>
-         <img className='carrinho' src='https://cdn.icon-icons.com/icons2/1830/PNG/512/cart2-115853_115816.png'></img>
+         <img className='carrinho' src='https://cdn.icon-icons.com/icons2/2785/PNG/512/trolley_cart_icon_177366.png'></img>
         </header>
        {children}
 
