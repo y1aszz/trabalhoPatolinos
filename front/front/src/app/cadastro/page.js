@@ -33,7 +33,7 @@ export default function Cadastro() {
         <div className='container'>
             <h3 className='conta'>CADASTRO DE LIVROS</h3>
             
-            <img className='imagemcadas' src='https://storage.googleapis.com/kotakode-prod-public/images/b774070f-c8b9-4896-bebc-7d7e51ccbac1-undraw_reading_time_gvg0-1.png'></img>
+            <img className='imagemcadas' src='https://www.fused.com/assets/svg/illustrations/reading.png'></img>
            
             <form className='contact_form' onSubmit={cadastrar}>
                 
