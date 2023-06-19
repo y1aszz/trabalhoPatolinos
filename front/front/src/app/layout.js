@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
     <ul className='socialIco2'>
       <li className='nome'>Yasmim Sordi</li>
 
-      <li className='social-icon__item'><a className='social-icon__link' href="">
+      <li className='social-icon__item'><a className='social-icon__link' href="https://github.com/y1aszz">
           <img className='imagemLogo' src='https://img.icons8.com/?size=1x&id=12598&format=png' name="logo-git"></img></a></li>
 
       <li className="social-icon__item"><a className="social-icon__link" href="https://www.linkedin.com/in/yasmim-favoretto-7a367b266/">
