@@ -21,7 +21,10 @@ export default async function Home() {
           <ul className={styles.ulPage}>
          
           <li><p style={{color:'#4e0c7b', fontWeight: 'bold', fontSize: 17, marginTop:10}}>{produtos.titulo}</p></li>
-           <li><Link href={`/produto/${produtos.codigo}`}><image style={{width: 145}} alt="foto" src={produtos.imagem}/></Link></li>
+           <li><Link href={`/produto/${produtos.codigo}`}>
+            <image style={{width: 145}} alt="foto" src={produtos.imagem}/>
+            </Link>
+            </li>
           
           <li style={{
             marginRight:50,
