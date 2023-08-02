@@ -1,6 +1,7 @@
 "use client"
 import Link from 'next/link';
 import styles from './page.module.css'
+import Image from 'next/image'
 
 
 
@@ -21,7 +22,7 @@ export default async function Home() {
           <ul className={styles.ulPage}>
          
           <li><p style={{color:'#4e0c7b', fontWeight: 'bold', fontSize: 17, marginTop:10}}>{produtos.titulo}</p></li>
-           <li><Link href={`/produto/${produtos.codigo}`}><img style={{width: 145}} src={produtos.imagem}/></Link></li>
+           <li><Link href={`/produto/${produtos.codigo}`}><image style={{width: 145}} alt="foto" src={produtos.imagem}/></Link></li>
           
           <li style={{
             marginRight:50,
