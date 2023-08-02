@@ -9,9 +9,10 @@ export default async function Home() {
 if (process.env.NODE_ENV === 'development') {
  const req = await fetch("http://localhost:3004/produtos", {
   cache: "no-cache"
-});
- const produtos = await req.json();
+})
 }
+ const produtos = await req.json();
+
   return (
    
     <main className={styles.moin}> 
