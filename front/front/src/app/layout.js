@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,12 +15,12 @@ export default function RootLayout({ children }) {
     <html lang="pt-br">
       <body>
         <header className='header'>
-          <img className='logo' alt="foto" src='https://s-media-cache-ak0.pinimg.com/originals/9d/c8/8e/9dc88efa480820bb6b1a265367627c77.jpg'></img>
+          <image className='logo' alt="foto" src='https://s-media-cache-ak0.pinimg.com/originals/9d/c8/8e/9dc88efa480820bb6b1a265367627c77.jpg'/>
           <ul className='ul'> 
           <li className='li'><Link href="/cadastro" className='voltar' > CADASTRAR </Link></li>
          <li className='voltando'><a href='/'>VOLTAR</a></li>
          </ul>
-         <img className='carrinho' alt="foto" src='https://cdn.icon-icons.com/icons2/2785/PNG/512/trolley_cart_icon_177366.png'></img>
+         <image className='carrinho' alt="foto" src='https://cdn.icon-icons.com/icons2/2785/PNG/512/trolley_cart_icon_177366.png'/>
         </header>
        {children}
 
