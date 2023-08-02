@@ -6,10 +6,10 @@ import styles from './page.module.css'
 
 export default async function Home() {
 
- // const req = await fetch("http://localhost:3004/produtos", {
-//  cache: "no-cache"
-// });
-//  const produtos = await req.json();
+ const req = await fetch("http://localhost:3004/produtos", {
+  cache: "no-cache"
+});
+ const produtos = await req.json();
 
   return (
    
