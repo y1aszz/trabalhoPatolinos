@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import styles from '../page.module.css'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 
 export default function Cadastro() {
     const route = useRouter();
@@ -33,7 +34,7 @@ export default function Cadastro() {
         <div className='container'>
             <h3 className='conta'>CADASTRO DE LIVROS</h3>
             
-            <img className='imagemcadas' src='https://www.fused.com/assets/svg/illustrations/reading.png'></img>
+            <image className='imagemcadas' alt="foto" src='https://www.fused.com/assets/svg/illustrations/reading.png'/>
            
             <form className='contact_form' onSubmit={cadastrar}>
                 
