@@ -59,7 +59,7 @@ export default function Cadastro() {
                 </div>
 
                 <div className='urlImage'>
-                <input id='texto' placeholder='Digite a URL da imagem' type="text" name="imagem"
+                <input className='textoaa' id='texto' placeholder='Digite a URL da imagem' type="text" name="imagem"
                 onChange={e => setImagem(e.target.value)}/>
                 </div>
 
